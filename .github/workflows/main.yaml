@@ -57,7 +57,6 @@ jobs:
           build-args: |
             VERDACCIO_VERSION=4.12.2
             VERDACCIO_GITHUB_OAUTH_UI_VERSION=2.4.0
-          platforms: linux/amd64,linux/arm64,linux/386
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.prepare.outputs.tags }}
           labels: |
